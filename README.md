@@ -1,9 +1,11 @@
 # 🌈 Cambia Colore di Background Randomico
 
 Questo progetto di base in JavaScript, PURAMENTE DIDATTICO, permette di **cambiare il colore di background** di una pagina web al click di un pulsante. I colori vengono selezionati in modo casuale da un array di colori predefiniti.
+
 🌈In questo esercizio, si sviluppa maggiormente la capacità di **Debugging**, skill fondamentale per un Developer!
 
 🌈Questo è il quarto esercizio del corso di **freecodecamp.org** (https://www.freecodecamp.org/), nello specifico https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/
+
 🌈Lezione: Learn Basic Debugging by Building a Random Background Color Changer
 
 ## 🚀 Funzionalità
