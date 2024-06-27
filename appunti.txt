@@ -1,0 +1,40 @@
+Classe Math, ha diversi metodi, tra cui
+
+    - Math.random() --> il metodo .random restituisce un numero pseudocasuale compreso tra 0 (incluso) e 1 (escluso). Si richiama il metodo senza elemento da passare
+
+    - Math.floor() --> è un metodo che arrotonda un numero verso il basso al numero intero più vicino. Si richiama il metodo, inserendo anche l'elemento da passare
+
+    Generalmente si usano combinati per generare un numero casuale intero.
+
+Es: Generare un numero intero casuale tra 0 e 9
+
+    let randomIndex = Math.floor(Math.random() * 10);
+    console.log(randomIndex); // Output: Un numero intero tra 0 e 9
+
+Es: Generazione di numeri interi casuali in un intervallo specifico
+
+    let randomInt = Math.floor(Math.random() * (max - min + 1)) + min;
+
+    ovvero
+
+    let min = 1;
+    let max = 100;
+    let randomInt = Math.floor(Math.random() * (max - min + 1)) + min;
+    console.log(randomInt); // Output: Un numero intero tra 1 e 100
+
+    spiegazione esplicitata
+
+    1. Math.random() genera un numero casuale tra 0 e 1, ad esempio 0.536.
+    2. Moltiplichiamo per (max - min + 1): 0.536 * (100 - 1 + 1) = 0.536 * 100 = 53.6.
+    3. Applichiamo Math.floor(): Math.floor(53.6) = 53.
+    4. Aggiungiamo min: 53 + 1 = 54.
+
+
+
+
+-----------------------------------------
+
+Cosa è un Event Listener?
+    Un event listener è un blocco di codice che "ascolta" un evento specifico su un elemento HTML e risponde quando quell'evento si verifica. Gli eventi comuni includono clic del mouse, movimenti del mouse, pressione dei tasti e altro.
+
+    
