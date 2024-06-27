@@ -27,22 +27,31 @@ Questo progetto di base in JavaScript, PURAMENTE DIDATTICO, permette di **cambia
 La cosa fondamentale di questo esercizio è la correzione del codice (il Debugging) e la creazione di un background-color random. Nello specifico, ho potuto approfondire:
 
 1. **Generazione di un numero casuale**: utilizzando l'oggetto **Math** e richiamando metodi come **.random()** e **.floor()**
-     function getRandomIndex() {
-        const randomIndex = Math.floor(ColorsArr.length * Math.random());
-        return randomIndex;
-     }
+
+         function getRandomIndex() {
+
+             const randomIndex = Math.floor(ColorsArr.length * Math.random());
+
+             return randomIndex;
+
+          }
 
     **Math.random()**: numero compreso tra 0 (incluso) e 1 (escluso). 
+
     **Math.floor()**: arrotonda un numero per difetto all'intero più vicino.
 
-2. **Modificare il testo di un elemento HTML**: utlizzo della proprità **.innerText**, che consente di modificare il contenuto testuale di un elemento.
+3. **Modificare il testo di un elemento HTML**: utlizzo della proprità **.innerText**, che consente di modificare il contenuto testuale di un elemento.
+   
      Differenza tra
+   
      **.innerText**: gestisce solo il testo, non considera i tag HTML. Es: paragrafo.innerText = "Testo cambiato!";
+   
      **.innerHTML**: può gestire e includere tag HTML. Es: paragrafo.innerHTML = "Ciao, <strong>mondo!</strong>";
 
-3. **Funzione al click di un pulsante**: utilizzando una proprietà dell'elemento, **.onclick**, viene richiamata la funzione.
-     const btn = document.querySelector("#btn");
-     btn.onclick = changeBackgroundColor;
+6. **Funzione al click di un pulsante**: utilizzando una proprietà dell'elemento, **.onclick**, viene richiamata la funzione.
+   
+          const btn = document.querySelector("#btn");
+          btn.onclick = changeBackgroundColor;
 
 ## 📜 Licenza
 Questo progetto è distribuito sotto la licenza MIT. Vedi il file LICENSE per maggiori dettagli.
